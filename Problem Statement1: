@@ -1,0 +1,53 @@
+/* Datatypes values
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a java program to consider a data types int, float and char and print values on the screen.
+
+Input Format:
+First line: An integer value n
+Second line: A float value f
+Third line: A single character c
+Output Format:
+Print the three values in the following format:
+
+Integer: n
+Float: f
+Character: c
+Constraints:
+The integer value n will be in the range: -10⁶ ≤ n ≤ 10⁶
+The float value f will be a valid decimal number
+The character c will be a single uppercase or lowercase letter (A–Z or a–z)
+Sample Input:
+5
+2.5
+A
+
+Sample Output:
+Integer: 5
+Float: 2.5
+Character: A */
+
+
+
+import java.util.*;
+public class Main 
+{
+  public static void main(String[] args)
+  {
+    
+    Scanner sc = new Scanner(System.in);
+    
+    float x = sc.nextFloat();
+    double y = sc.nextDouble();
+    float ProductFloat = x * (float)y;
+    double ProductDouble = x * y; 
+    
+    System.out.printf("Product in float: %.6f\n", ProductFloat);
+    System.out.printf("Product in double: %6f\n", ProductDouble);
+    
+    sc.close();
+    
+  }
+  
+}
