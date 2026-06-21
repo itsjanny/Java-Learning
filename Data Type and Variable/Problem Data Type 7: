@@ -1,0 +1,47 @@
+-----------------------------------------------------------------Question-------------------------------------------------------------------------------------------
+/*
+Unit Converter
+Max Score: 5 | Difficulty: medium
+
+Problem Statement:
+Write a program that converts a given measurement in centimeters to meters and inches.
+
+Input Format:
+An integer value cm representing centimeters.
+Output Format:
+First line: [cm] cm is [value] meters
+Second line: [cm] cm is [value] inches
+(Print meters and inches up to 2 decimal places)
+
+Constraints:
+1 ≤ cm ≤ 100000
+1 meter = 100 cm
+1 inch = 2.54 cm
+Sample Input:
+100
+
+Sample Output:
+100 cm is 1.00 meters
+100 cm is 39.37 inches
+
+Explanation:
+Base Conversion
+*/
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner (System.in);
+    
+    float C = sc.nextFloat();
+    
+    float M = C/100;
+    double I= C/2.54;
+    
+    System.out.printf("%.0f cm is %.2f meters\n", C, M);
+    System.out.printf("%.0f cm is %.2f inches", C, I);
+    sc.close();
+}
+}
