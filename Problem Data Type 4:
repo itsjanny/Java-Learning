@@ -1,1 +1,54 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+/*
+Sum of Different Data Types
+Max Score: 5 | Difficulty: easy
 
+Problem Statement:
+Write a program that takes an int and a double, performs an addition operation, and prints the result. Ensure proper type conversion and casting.
+
+Input Format:
+First line: An integer number a
+Second line: A double number b
+Output Format:
+One line: Result of addition: <sum>
+(where <sum> is the addition of a and b shown as a double)
+
+Constraints:
+-10
+6
+6
+  ≤ a ≤ 10
+6
+6
+ 
+-10
+6.0
+6.0
+  ≤ b ≤ 10
+6.0
+6.0
+ 
+Sample Input:
+5
+3.5
+
+Sample Output:
+Result of addition: 8.5  */
+
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+
+import java.util.*;
+public class Main{
+  public static void main(String [] args){
+    Scanner sc = new Scanner (System.in);
+    
+    int a = sc.nextInt();
+    double b = sc.nextDouble();
+    
+    double C = (double)a + b;
+    
+    System.out.println("Result of addition: "+C);
+  }
+}
