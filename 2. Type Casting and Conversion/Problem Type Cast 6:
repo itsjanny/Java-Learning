@@ -1,1 +1,49 @@
+-----------------------------------------------------------------Question----------------------------------------------------------------------------------------------------
+/*
+Currency Converter with Type Casting
+Max Score: 5 | Difficulty: medium
 
+Problem Statement:
+Create a program that:
+
+Takes the amount in INR (integer)
+Takes the exchange rate (double, INR to USD)
+Calculates:
+Exact USD using implicit conversion
+Whole USD (truncated, not rounded) using explicit casting
+Input Format:
+<int> INR
+<double> Rate
+Output Format:
+Exact USD: <double>
+Whole Dollars (Truncated): <int>
+sample Input:
+1000
+74.85
+
+sample Output:
+Exact USD: 13.360053440213761
+Whole Dollars (Truncated): 13
+
+Explanation:
+1000 / 74.85 = 13.3593… → double gets truncated to 13 via casting
+*/
+-----------------------------------------------------------------------------Code-----------------------------------------------------------------------------------
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    
+    Scanner sc = new Scanner(System.in);
+    
+    int INR = sc.nextInt();
+    double Rate = sc.nextDouble();
+    
+    double USD = INR / Rate;
+    int TUSD = (int)USD ;
+    System.out.println("Exact USD: "+ USD);
+    System.out.println("Whole Dollars (Truncated): "+ TUSD);
+    
+    sc.close();
+  }
+}
