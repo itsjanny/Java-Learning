@@ -1,0 +1,55 @@
+-----------------------------------------------------------------Question----------------------------------------------------------------------------------------------------
+Data Type Precision
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a Java method that calculates the product of two floating-point numbers: float and double . Print the result in both float and double types and observe the differences.
+
+Input Format:
+The first line contains a floating-point number of type float.
+The second line contains a floating-point number of type double.
+Output Format:
+First line: Print the product in float format as Product in float: <value>
+Second line: Print the product in double format as Product in double: <value>
+Ensure 6 decimal places in the output formatting.
+
+Constraints:
+The input values will be positive numbers.
+0.0 < float_input ≤ 1000.0
+0.0 < double_input ≤ 1000.0
+Sample Input:
+3.5
+2.0
+
+Sample Output:
+Product in float: 7.000000
+Product in double: 7.000000  
+
+
+-----------------------------------------------------------------------------Code-----------------------------------------------------------------------------------
+import java.util.*;
+public class Main 
+{
+  public static void main(String[] args)
+  {
+    
+    Scanner sc = new Scanner(System.in);
+    
+    float x = sc.nextFloat();
+    double y = sc.nextDouble();
+    float ProductFloat = x * (float)y;
+    double ProductDouble = x * y; 
+    
+    System.out.printf("Product in float: %.6f\n", ProductFloat);
+    System.out.printf("Product in double: %6f\n", ProductDouble);
+    
+    sc.close();
+    
+  }
+  
+}
+
+
+
+
+
