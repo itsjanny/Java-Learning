@@ -1,1 +1,58 @@
+-----------------------------------------------------------------Question----------------------------------------------------------------------------------------------------
 
+/*
+String to Numeric Types
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a program that converts a String representation of a number into an int and a double. Use Integer.parseInt() and Double.parseDouble() methods.
+
+Input Format:
+A single line of input representing a number as a string.
+
+Output Format:
+If the input is a valid integer:
+
+Integer value: <int_value>
+Double value: <double_value>
+If the input is not a valid integer (e.g., float, text):
+
+Invalid input. Please enter a valid number.
+Constraints:
+Input string must be non-empty.
+Input may contain only digits or digits with a decimal point.
+No scientific notation (e.g., "1e4") will be used.
+Sample Input:
+123
+
+Sample Output:
+Integer value: 123
+Double value: 123.0
+
+Sample Input 2:
+456.78
+
+Sample Output 2:
+Invalid input. Please enter a valid number.
+*/
+-----------------------------------------------------------------------------Code-----------------------------------------------------------------------------------
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    String str = sc.nextLine();
+    
+    try {
+      int i = Integer.parseInt(str);
+      double d = Double.parseDouble(str);
+      
+      System.out.println("Integer value: "+i);
+      System.out.println("Double value: "+d);
+      
+    } catch (NumberFormatException e){
+      System.out.println("Invalid input. Please enter a valid number.");
+    }
+    sc.close();
+  }
+}
