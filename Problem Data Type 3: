@@ -1,1 +1,49 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+/*
+Swap Two Variables
+Max Score: 5 | Difficulty: easy
 
+Problem Statement:
+Write a java program to swap the values of two integer variables without using a temporary variable.
+
+Input Format:
+First line: An integer a (the first number)
+Second line: An integer b (the second number)
+Output Format:
+First line: Before swapping: a = <value>, b = <value>
+Second line: After swapping: a = <value>, b = <value>
+Constraints:
+-1000 ≤ a, b ≤ 1000
+a and b can be the same or different
+Must not use a third variable for swapping
+Sample Input:
+1
+7
+
+Sample Output:
+Before swapping: a = 1, b = 7
+After swapping: a = 7, b = 1  */
+
+
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+
+import java.util.*;
+public class Main{
+  public static void main(String [] args){
+    Scanner sc= new Scanner(System.in);
+    
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    
+    System.out.println("Before swapping: a = "+a+", b = "+b);
+    
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    System.out.println("After swapping: a = "+a+", b = "+b);
+    
+  }
+  
+}
