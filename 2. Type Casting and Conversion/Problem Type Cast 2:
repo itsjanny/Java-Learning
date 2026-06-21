@@ -1,1 +1,41 @@
+-----------------------------------------------------------------Question----------------------------------------------------------------------------------------------------
+/*
+Explicit Type Casting
+Max Score: 5 | Difficulty: easy
 
+Problem Statement:
+Write a program demonstrating explicit type casting by converting a double value to an int and printing both values.
+
+Input Format:
+One line containing a single double value.
+
+Output Format:
+Two lines:
+
+First line: Original double value: <double_value>
+Second line: Converted int value: <int_value>
+Constraints:
+−10⁶.0 ≤ double value ≤ 10⁶.0
+The input will always contain a decimal number.
+Sample Input:
+9.75
+
+Sample Output:
+Original double value: 9.75
+Converted int value: 9
+*/
+-----------------------------------------------------------------------------Code-----------------------------------------------------------------------------------
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    double a = sc.nextDouble();
+    int b = (int)a;
+    
+    System.out.println("Original double value: "+a);
+    System.out.println("Converted int value: "+b);
+    
+    sc.close();
+  } 
+}
