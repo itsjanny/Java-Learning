@@ -1,1 +1,48 @@
+-----------------------------------------------------------------Question------------------------------------------------------------------------------------------
+/*
+Implicit Type Conversion
+Max Score: 5 | Difficulty: easy
 
+Problem Statement:
+Write a program to demonstrate implicit type conversion (promotion) by assigning an int value to a double variable and printing both values.
+
+Input Format:
+One line containing a single integer value.
+
+Output Format:
+Two lines:
+
+First line: Integer value: <int_value>
+Second line: Converted double value: <double_value>
+Constraints:
+−10⁶ ≤ integer value ≤ 10⁶
+
+Sample Input:
+100
+
+Sample Output:
+Integer value: 100
+Converted double value: 100.0
+*/
+
+
+-----------------------------------------------------------------------------Code--------------------------------------------------------------------------------
+
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String [] args){
+    
+    Scanner sc = new Scanner(System.in);
+    
+    int a=sc.nextInt();
+    double b = a;
+    
+    System.out.println("Integer value: "+a);
+    System.out.println("Converted double value: "+b);
+    
+    sc.close();
+    
+  }
+  
+}
