@@ -1,1 +1,45 @@
+-----------------------------------------------------------------Question----------------------------------------------------------------------------------------------------
+/*
+Integer Division
+Max Score: 5 | Difficulty: easy
 
+Problem Statement:
+Write a function that calculates the division of two integers but returns the result as a float. For instance, dividing 5 by 2 should give 2.5. Try performing the division without casting the integers to floats first.
+
+Input Format:
+First line: Integer a (numerator)
+Second line: Integer b (denominator)
+Output Format:
+If b != 0:
+Result: <float_result_rounded_to_2_decimal_places>
+If b == 0:
+Error: Cannot divide by zero.
+
+Constraints:
+-10⁶ ≤ a, b ≤ 10⁶
+b must not be zero for valid division
+Show result rounded to two decimal places
+Sample Input:
+10
+2
+*/
+-----------------------------------------------------------------------------Code-----------------------------------------------------------------------------------
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    
+    if (b != 0){
+      float f= (float)a/ (float)b;
+      System.out.printf("Result: %.2f",f);
+    }else{
+      System.out.printf("Error: Cannot divide by zero.");
+    }
+    sc.close();
+  }
+  
+}
