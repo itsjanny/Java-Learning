@@ -1,1 +1,53 @@
+-----------------------------------------------------------------Question----------------------------------------------------------------------------------------------------
+/*
+Grade Weight Adjuster
+Max Score: 5 | Difficulty: medium
 
+Problem Statement:
+Given:
+
+Internal marks (int, out of 30)
+External marks (double, out of 70)
+Your program should:
+
+Add both values using type promotion
+Calculate percentage (total/100 * 100)
+Convert the result to an integer (truncate) using explicit casting
+Input Format:
+<int> InternalMarks
+<double> ExternalMarks
+Output Format:
+Total Marks: <double>
+Percentage (int): <int>
+Sample Input:
+20
+60.5
+
+Sample Output:
+Total Marks: 80.5
+Percentage (int): 80
+
+Explanation:
+20+60.5 = 80.5; casted to 80 as percentage
+*/
+-----------------------------------------------------------------------------Code-----------------------------------------------------------------------------------
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    double b = sc.nextDouble();
+    
+    if((a<=30) && (b<=70)){
+      double total = a + b;
+      int per =(int)(total/100*100);
+      
+      System.out.println("Total Marks: "+ total);
+      System.out.println("Percentage (int): "+ per);
+    }else{
+      System.out.println("Error");
+    }
+    sc.close();
+  }
+}
