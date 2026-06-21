@@ -1,0 +1,70 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+/*
+Different Data Types
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a program that creates an array of Object type and stores various data types (e.g., Integer, Double, String). Access and cast these objects to their original types. (including negative numbers).
+
+Input Format:
+Five lines of input:
+
+First line: Integer (e.g., 42)
+Second line: Double (e.g., 3.14)
+Third line: String (e.g., Hello)
+Fourth line: Integer (e.g., 7)
+Fifth line: Double (e.g., 2.718)
+Output Format:
+Display each element with its label in the following format:
+Stored values:
+
+Integer 1: <value>
+Double 1: <value>
+String: <value>
+Integer 2: <value>
+Double 2: <value>
+Constraints:
+Integers: −10⁶ ≤ value ≤ 10⁶
+Doubles: −10⁶.0 ≤ value ≤ 10⁶.0
+String: Up to 100 characters, no spaces
+Sample Input:
+42
+3.14
+Hello
+7
+2.718
+
+Sample Output:
+Stored values:
+Integer 1: 42
+Double 1: 3.14
+String: Hello
+Integer 2: 7
+Double 2: 2.718 */
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    
+    Scanner sc = new Scanner(System.in);
+    
+    Object[] arr= new Object[5];
+    
+    arr[0]= sc.nextInt();
+    arr[1] = sc.nextDouble();
+    sc.nextLine();
+    arr[2]= sc.nextLine();
+    arr[3]= sc.nextInt();
+    arr[4] = sc.nextDouble();
+    
+    System.out.println("Stored values:");
+    System.out.println("Integer 1: "+ (Integer)arr[0]);
+    System.out.println("Double 1: "+ (Double)arr[1]);
+    System.out.println("String: "+ (String)arr[2]);
+    System.out.println("Integer 2: "+ (Integer)arr[3]);
+    System.out.println("Double 2: "+ (Double)arr[4]);
+    
+    sc.close();
+  }
+}
