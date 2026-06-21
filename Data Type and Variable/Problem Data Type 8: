@@ -1,0 +1,59 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+/*
+Character Code Manipulator
+Max Score: 5 | Difficulty: hard
+
+Problem Statement:
+You're asked to write a Java program that reads a single English letter (uppercase or lowercase). Your task is to:
+
+Convert the input char to its ASCII int value (Java automatically promotes char to int when needed).
+Add a constant value of 4 to the ASCII code. Use a final int SHIFT = 4.
+Store the result in an int variable.
+Cast the result back to a char to get the new shifted character.
+Display the original character, its ASCII code, the shifted ASCII value, and the final character.
+Input Format:
+A single English character (A-Z or a-z)
+Output Format:
+Original Character: [char]
+ASCII Value: [int]
+Shifted ASCII Value: [int]
+Shifted Character: [char]
+Sample Input:
+A
+
+Sample Output:
+Original Character: A
+ASCII Value: 65
+Shifted ASCII Value: 69
+Shifted Character: E
+
+Explanation:
+A has ASCII 65 → 65+4 = 69 → 'E'
+*/
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    char ch = sc.next().charAt(0);
+    
+    
+    final int shift = 4;
+    int ascii = ch;
+    int shiftedascii = ascii + shift;
+    char shiftedchar = (char) shiftedascii;
+    
+    
+    System.out.println("Original Character: "+ ch);
+    System.out.println("ASCII Value: "+ ascii);
+    System.out.println("Shifted ASCII Value: "+ shiftedascii);
+    System.out.println("Shifted Character: "+ shiftedchar);
+    
+    sc.close();
+    
+    
+  }
+}
