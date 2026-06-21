@@ -1,0 +1,58 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+/*
+Student Information Formatter
+Max Score: 5 | Difficulty: medium
+
+Problem Statement:
+You are asked to collect and display student data in a formatted output. The information includes:
+
+Name (String)
+Age (int)
+Grade (char)
+Average Marks (float)
+Write a program that reads this data and prints it in the following format:
+
+"Student [name] (Age: [age]) scored an average of [marks] and is graded '[grade]'"
+
+Input Format:
+String: name
+int: age
+float: marks
+char: grade
+Output Format:
+One formatted string line as described above.
+Constraints:
+1 ≤ age ≤ 100
+0.0 ≤ marks ≤ 100.0
+Grade must be a single uppercase letter.
+Sample Input:
+John
+21
+85.5
+B
+
+Sample Output:
+Student John (Age: 21) scored an average of 85.5 and is graded 'B'
+
+Explanation:
+Correct use of all data types
+*/
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    String Name = sc.nextLine();
+    int Age = sc.nextInt();
+    float Average= sc.nextFloat();
+    char Grade = sc.next().charAt(0);
+    
+    System.out.println("Student "+ Name +" (Age: "+ Age +") scored an average of "+ Average +" and is graded '"+ Grade +"'");
+    sc.close();
+  }
+}
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
