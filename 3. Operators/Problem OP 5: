@@ -1,0 +1,72 @@
+Operator Precedence
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a program that evaluates a complex mathematical expression using various operators (addition, multiplication, division, etc.) and checks the results with and without parentheses. Analyze how operator precedence affects the output.
+
+Note:
+
+double resultWithoutParentheses = x + y * z / 2 - x * z;
+double resultWithParentheses = (x + y) * (z / 2) - (x * z);
+Input Format:
+Three floating-point numbers (double), each on a separate line:
+
+First number: x
+Second number: y
+Third number: z
+Output Format:
+Results:
+
+Without parentheses: <result1>
+With parentheses: <result2>
+Constraints:
+-10
+6.0
+6.0
+  ≤ x, y, z ≤ 10
+6.0
+6.0
+ 
+z should not be zero for division to avoid division by zero error (although your code currently does not explicitly check this, consider this a logical constraint for safety).
+Sample Input:
+6
+8
+9
+
+Sample Output:
+Results:
+Without parentheses: -12.0
+With parentheses: 9.0
+
+Sample Input 2:
+5
+10
+2
+
+Sample Output 2:
+Results:
+Without parentheses: 5.0
+With parentheses: 5.0
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    double x = sc.nextDouble();
+    double y = sc.nextDouble();
+    double z = sc.nextDouble();
+    
+    double withoP = x + y * z / 2 - x * z ;
+    double withP = (x + y) * ( z / 2) - (x * z);
+    
+    System.out.println("Results:");
+    System.out.println("Without parentheses: "+ withoP);
+    System.out.println("With parentheses: "+ withP);
+    
+    
+  }
+  
+}
