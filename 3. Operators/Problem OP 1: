@@ -1,1 +1,42 @@
+/*
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+Increment Operator
+Max Score: 5 | Difficulty: easy
 
+Problem Statement:
+Write a Java program to Demonstrate Increment Operator.
+
+Input Format:
+One integer number
+
+Output Format:
+First line: After pre-increment: <value after ++number>
+Second line: After post-increment: <value shown by number++>
+Third line: Value of number after post-increment: <value after number++ operation>
+Constraints:
+-10⁶ ≤ number ≤ 10⁶
+
+Sample Input:
+5
+
+Sample Output:
+After pre-increment: 6
+After post-increment: 6
+Value of number after post-increment: 7
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+*/
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    int a = sc.nextInt();
+    int b = ++a;
+    System.out.println("After pre-increment: "+ b);
+    int c = a++;
+    System.out.println("After post-increment: "+ c);
+    int d = a;
+    System.out.println("Value of number after post-increment: "+ d);
+  }
+}
