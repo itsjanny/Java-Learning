@@ -1,0 +1,44 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+Using Shift Operators
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a Java program to multiply and divide a number by 2 using left shift (<<) and right shift (>>) operators.
+
+Input Format:
+A single integer n
+
+Output Format:
+Original number: n
+After multiplying by 2 (left shift): result
+After dividing by 2 (right shift): result
+Constraints:
+-10⁶ ≤ n ≤ 10⁶
+
+Sample Input:
+5
+
+Sample Output:
+Original number: 5
+After multiplying by 2 (left shift): 10
+After dividing by 2 (right shift): 2
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+//Enhance your coding skills, start writing your code here!import java.util.*;
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    System.out.println("Original Number: "+n);
+    //int mul= n*2;
+    System.out.println("After multiplying by 2 (left shift): "+ (n<<1));
+    //int div= n/2;
+    System.out.println("After dividing by 2 (right shift): "+ (n>>1));
+    
+    sc.close();
+  
+    
+  }
+}
