@@ -1,0 +1,60 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+
+Salary Deduction and Bonus Eligibility
+Max Score: 5 | Difficulty: medium
+
+Problem Statement:
+A company calculates an employee's in-hand salary after the following deductions:
+
+Provident Fund (PF): 12%
+Tax: 10%
+Misc. Deductions: 5%
+If the final in-hand salary is ₹30,000 or more, the employee is eligible for a performance bonus, otherwise not eligible.
+
+Input Format:
+float grossSalary
+Output Format:
+"Eligible for Bonus"
+"Not Eligible"
+Sample Input 1:
+40000
+
+Sample Output 1:
+Not Eligible
+
+Explanation:
+In-hand = 40000 - (12% + 10% + 5%) = ₹29,200
+
+Sample Input 2:
+50000
+
+Sample Output 2:
+Eligible for Bonus
+
+Explanation:
+In-hand = ₹36,500
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args)
+  {
+   Scanner sc = new Scanner(System.in);
+   
+   float grossSalary = sc.nextFloat();
+   
+   float Cut = grossSalary * 27/100;
+   float afterCut = grossSalary - Cut;
+   if (afterCut >= 30000)
+   {
+      System.out.println("Eligible for Bonus");
+   } 
+   else
+   {
+      System.out.println("Not Eligible");
+   }
+  }
+}
