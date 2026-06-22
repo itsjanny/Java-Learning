@@ -1,0 +1,67 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+Candidate Selection System
+Max Score: 5 | Difficulty: hard
+
+Problem Statement:
+A recruitment system evaluates candidates based on three scores:
+
+Technical Skills (out of 100)
+Communication Skills (out of 100)
+Problem-Solving Skills (out of 100)
+The decision is made based on the following rules:
+
+If the average score is ≥ 75 and all three scores are ≥ 60, the candidate is "Selected".
+If the average is ≥ 60 and at least 2 scores are ≥ 60, the candidate is "Waitlisted".
+Otherwise, the candidate is "Rejected".
+Input Format:
+int techScore
+int commScore
+int probScore
+Output Format:
+"Selected", "Waitlisted", or "Rejected"
+Sample Input 1:
+80 85 90
+
+Sample Output 1:
+Selected
+
+Explanation:
+Avg = 85, all scores ≥ 60
+
+Sample Input 2:
+70 60 50
+
+Sample Output 2:
+Waitlisted
+
+Explanation:
+Avg = 60, 2 scores ≥ 60  
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args)
+  {
+   Scanner sc = new Scanner(System.in);
+    int techScore = sc.nextInt();
+    int commScore = sc.nextInt();
+    int probScore = sc.nextInt();
+    
+    int average = (techScore + commScore + probScore) / 3;
+    if (average >= 75 && techScore >=60 && commScore >= 60 && probScore >= 60)
+    {
+      System.out.println("Selected");
+    }
+    else if (average>=60 && ((techScore >=60 && commScore >=60) || (techScore >=60 && probScore >=60)|| (commScore >=60 && probScore >= 60)))
+    {
+      System.out.println("Waitlisted");
+    }
+    else
+    {
+      System.out.println("Rejected"); 
+    }
+  }
+}
