@@ -1,0 +1,59 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+Compare Two Numbers
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a Java program to Compare Two Numbers Using Relational Operators.
+
+Input Format:
+First line: An integer a
+Second line: An integer b
+Output Format:
+First line: Comparing a and b:
+Next six lines should print:
+
+a > b: true/false
+a < b: true/false
+a == b: true/false
+a != b: true/false
+a >= b: true/false
+a <= b: true/false
+Constraints:
+-10⁶ ≤ a, b ≤ 10⁶
+
+Sample Input:
+5
+3
+
+Sample Output:
+Comparing 5 and 3:
+5 > 3: true
+5 < 3: false
+5 == 3: false
+5 != 3: true
+5 >= 3: true
+5 <= 3: false
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    
+    System.out.printf("Comparing %d and %d:\n", a,b);
+    System.out.printf("%d > %d: %b%n", a , b ,a>b);
+    System.out.printf("%d < %d: %b%n", a , b ,a<b);
+    System.out.printf("%d == %d: %b%n", a , b ,a==b);
+    System.out.printf("%d != %d: %b%n", a , b ,a!=b);
+    System.out.printf("%d >= %d: %b%n", a , b ,a>=b);
+    System.out.printf("%d <= %d: %b%n", a , b ,a<=b);
+    
+    sc.close();
+  }
+  
+}
