@@ -1,0 +1,84 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+Unary Operator
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a program that uses the increment (++) and decrement (--) operators in various contexts (prefix and postfix). Observe the difference in output when used in expressions versus standalone statements.
+
+Note:Let the reset value be 5 everytime
+
+Input Format:
+A single integer n (initial value)
+
+Output Format:
+A sequence of print statements showing:
+
+The initial value
+Result of prefix increment
+Result of postfix increment and value after it
+Reset to original
+Result of prefix decrement
+Result of postfix decrement and value after it
+Final value
+Constraints:
+-10⁴ ≤ n ≤ 10⁴
+
+Sample Input:
+5
+
+Sample Output:
+Initial value: 5
+After prefix increment: 6
+After postfix increment: 6
+Current value after postfix increment: 7
+
+Reset value: 5
+After prefix decrement: 4
+After postfix decrement: 4
+Current value after postfix decrement: 3
+
+Final value of number: 3
+
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int i = sc.nextInt();
+    System.out.println("Initial value: "+ i);
+    
+    int preIn = ++i;
+    System.out.println("After prefix increment: "+ preIn);
+    
+    int postIn = i++;
+    System.out.println("After postfix increment: "+ postIn);
+    
+    System.out.println("Current value after postfix increment: "+ i);
+    
+  
+    System.out.println();
+    
+    
+    int res=5;
+    System.out.println("Reset value: "+ res);
+    
+    int preDe = --res;
+    System.out.println("After prefix decrement: "+ preDe);
+    
+    int postDe = res--;
+    System.out.println("After postfix decrement: "+ postDe);
+    
+    
+    System.out.println("Current value after postfix decrement: "+ res);
+    
+    System.out.println();
+    
+    System.out.println("Final value of number: "+ res);
+    
+    
+    sc.close();
+    
+  }
+}
