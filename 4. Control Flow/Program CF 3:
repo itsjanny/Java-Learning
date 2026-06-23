@@ -1,0 +1,52 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+Grade from Exam Score
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a Java program to Determine a Grade Based on Exam Score.
+
+Input Format:
+A single integer representing the exam score (0 to 100).
+
+Output Format:
+Print "The grade is: X" where X is the grade (A, B, C, D, or F).
+
+Constraints:
+0 ≤ score ≤ 100
+
+Sample Input:
+95
+
+Sample Output:
+The grade is: A
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    int score = sc.nextInt();
+    if (score>=90)
+    {
+      System.out.println("The grade is: A");
+    }
+    else if (score>=80)
+    {
+      System.out.println("The grade is: B"); 
+    }
+    else if (score>=70)
+    {
+      System.out.println("The grade is: C"); 
+    }
+    else if (score>=60)
+    {
+      System.out.println("The grade is: D"); 
+    }
+    else
+    {
+      System.out.println("The grade is: F"); 
+    }
+  }
+}
