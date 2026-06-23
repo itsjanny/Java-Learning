@@ -1,0 +1,47 @@
+-----------------------------------------------------------------Question-----------------------------------------------------------------------------------------
+Check Leap Year or not
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a Java program to determine if a Year is a Leap Year or not.
+
+Input Format:
+A single integer representing the year.
+
+Output Format:
+Print "<year> is a leap year." if the year is a leap year.
+Print "<year> is not a leap year." if it is not.
+Constraints:
+1 ≤ year ≤ 9999
+
+Sample Input:
+2020
+
+Sample Output:
+2020 is a leap year.
+
+Sample Input 2:
+1990
+
+Sample Output 2:
+1990 is not a leap year.
+--------------------------------------------------------------------CODE-------------------------------------------------------------------------------------------
+
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    int year = sc.nextInt();
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+    {
+      System.out.printf("%d is a leap year.",year);
+    }
+    else
+    {
+      System.out.printf("%d is not a leap year.",year);
+    }
+  }
+}
