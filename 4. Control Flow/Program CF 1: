@@ -1,0 +1,45 @@
+Number is Even or Odd
+Max Score: 5 | Difficulty: easy
+
+Problem Statement:
+Write a Java program to Check if a Number is Even or Odd.
+
+Input Format:
+A single integer number.
+
+Output Format:
+Print "The number is even." if the number is even.
+Print "The number is odd." if the number is odd.
+Constraints:
+-10
+9
+9
+  ≤ number ≤ 10
+9
+9
+ 
+
+Sample Input:
+4
+
+Sample Output:
+The number is even.
+
+
+
+//Enhance your coding skills, start writing your code here!!
+import java.util.*;
+public class Main
+{
+  public static void main(String[] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+    if (num % 2 == 0)
+    {
+      System.out.println("The number is even.");
+    }else{
+      System.out.println("The number is odd.");
+    }
+  }
+}
