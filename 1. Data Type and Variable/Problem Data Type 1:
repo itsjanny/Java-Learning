@@ -3,7 +3,7 @@ Max Score: 5 | Difficulty: easy
 
 Problem Statement:
 Write a java program to consider a data types int, float and char and print values on the screen.
-
+ff
 Input Format:
 First line: An integer value n
 Second line: A float value f
